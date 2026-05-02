@@ -7,6 +7,7 @@ import { useAppSelector } from "@/lib/hooks";
 import { verifyManifestUrl } from "@/app/api/verify-manifest/verifyDomain";
 import { StatefulReaderWrapper } from "@/components/Reader/StatefulReaderWrapper";
 import { ErrorHandler, ProcessedError } from "@/helpers/errorHandler";
+import { myPreferences } from "@/preferences/myPreferences";
 
 type Params = { manifest: string };
 
@@ -64,6 +65,7 @@ export default function ManifestPage({ params }: Props) {
           publication={ publication }
           localDataKey={ localDataKey }
           isLoading={ isLoading || publicationLoading }
+          preferences={ { initialPreferences: myPreferences } }
         />
       ) : null }
     </>
