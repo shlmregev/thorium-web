@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext } from "react";
-import { defaultPreferences } from "./defaultPreferences";
+import { myPreferences } from "./myPreferences";
 import { ThPreferences, DefaultKeys, CustomizableKeys } from "./preferences";
 
 export interface PreferencesContextValue<K extends CustomizableKeys = DefaultKeys> {
@@ -14,7 +14,7 @@ export const ThPreferencesContext = createContext<PreferencesContextValue<any> |
 
 // Keep the default export for backward compatibility
 export const defaultPreferencesContextValue: PreferencesContextValue<DefaultKeys> = {
-  preferences: defaultPreferences as ThPreferences<DefaultKeys>,
+  preferences: myPreferences as ThPreferences<DefaultKeys>,
   updatePreferences: () => {
     throw new Error("updatePreferences must be used within a ThPreferencesProvider with an adapter");
   },
