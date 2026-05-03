@@ -272,7 +272,11 @@ export const makeStore = (storageKey?: string, externalReducers: Record<string, 
     actions: persistedState.actions,
     settings: persistedState.settings,
     theming: persistedState.theming,
-    preferences: persistedState.preferences,
+    // Note: Do not load `preferences` from local storage.
+    // Thorium Web's architecture specifies that reader preferences should come
+    // from the initial configuration (e.g. `myPreferences.ts`) unless the user
+    // wants them to persist permanently. Omitting it forces initial setup to stick.
+    preferences: undefined,
     globalPreferences: persistedState.globalPreferences,
     webPubSettings: persistedState.webPubSettings,
     audioSettings: persistedState.audioSettings,
