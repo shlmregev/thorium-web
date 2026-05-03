@@ -61,7 +61,8 @@
     "check-locales": "node scripts/check-locales.mjs",
     "update-locales": "pnpm remove @edrlab/thorium-locales && pnpm add @edrlab/thorium-locales@github:edrlab/thorium-locales && pnpm extract-locales && pnpm check-locales --summary --show-missing",
     "bundle": "pnpm extract-locales && tsup --config tsup.config.ts && pnpm copy-locales && pnpm copy-fonts",
-    "increment": "node scripts/increment.mjs"
+    "increment": "node scripts/increment.mjs",
+    "serve-local": "node scripts/serve-local-epub.mjs"
   },
   "peerDependencies": {
     "@readium/css": "^2.0.2",
@@ -92,7 +93,9 @@
     "@reduxjs/toolkit": "^2.11.2",
     "classnames": "^2.5.1",
     "colorthief": "^3.3.1",
+    "cors": "^2.8.6",
     "debounce": "^3.0.0",
+    "express": "^5.2.1",
     "i18next": "^25.8.13",
     "i18next-browser-languagedetector": "^8.2.1",
     "i18next-http-backend": "^3.0.2",
@@ -121,6 +124,7 @@
     "eslint-plugin-unused-imports": "^4.4.1",
     "glob": "^13.0.6",
     "immer": "11.1.2",
+    "r2-streamer-js": "^1.0.51",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }

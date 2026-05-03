@@ -1,0 +1,130 @@
+{
+  "reader": {
+    "app": {
+      "loading": "טוען",
+      "printingDisabled": "ההדפסה הושבתה",
+      "publicationWrapper": "אתה עכשיו בפרסום.",
+      "errors": {
+        "title": "שגיאה",
+        "notFound": "הפרסום לא נמצא.",
+        "accessDenied": "הגישה נדחתה.",
+        "network": "השרת אינו זמין - אנא נסה שוב מאוחר יותר.",
+        "serverError": "שגיאת שרת - אנא נסה שוב מאוחר יותר.",
+        "clientError": "בקשה לא חוקית.",
+        "generic": "לא ניתן לטעון את הפרסום."
+      },
+      "docking": {
+        "dockingLeft": "לוח עגון לשמאל",
+        "dockingRight": "לוח עגון לימין",
+        "dockingEmpty": "כרגע ריק",
+        "dockingClosed": "סגור, מכיל {{ action }}",
+        "dockingCollapsed": "מכווץ, מכיל {{ action }}"
+      },
+      "header": {
+        "backLink": {
+          "trigger": "חזרה לספרייה",
+          "tooltip": "ספרייה"
+        },
+        "label": "סרגל עליון",
+        "runningHead": "כותרת עליונה",
+        "actions": "פעולות"
+      },
+      "footer": {
+        "label": "סרגל תחתון"
+      },
+      "progression": {
+        "wrapper": "התקדמות נוכחית",
+        "referenceFallback": "פרק נוכחי",
+        "pubFallback": "הפרסום"
+      },
+      "docker": {
+        "wrapper": "אפשרויות עגינה",
+        "dockToLeft": {
+          "trigger": "עגן לשמאל",
+          "tooltip": "עגן לשמאל"
+        },
+        "dockToRight": {
+          "trigger": "עגן לימין",
+          "tooltip": "עגן לימין"
+        },
+        "popover": {
+          "trigger": "הצג בחלון",
+          "tooltip": "קופץ"
+        },
+        "fullscreen": {
+          "trigger": "הצג מעל התוכן",
+          "tooltip": "שכבת על"
+        }
+      },
+      "back": {
+        "trigger": "חזור"
+      }
+    },
+    "navigation": {
+      "scroll": {
+        "wrapper": "נווט בפרסום"
+      }
+    },
+    "fullscreen": {
+      "tooltip": "מסך מלא",
+      "trigger": "החלף מצב מסך מלא",
+      "close": "צא ממצב מסך מלא"
+    },
+    "toc": {
+      "entries": "רשומות בתוכן העניינים"
+    },
+    "jumpToPosition": {
+      "go": "עבור",
+      "label": "בחר מיקום מ-{{ positionStart }} עד {{ positionEnd }}:",
+      "error": {
+        "notFound": "המיקום לא נמצא."
+      }
+    },
+    "overflowMenu": {
+      "active": {
+        "tooltip": "פעולות נוספות",
+        "trigger": "החלף תפריט"
+      },
+      "hint": {
+        "tooltip": "החלף פעולות",
+        "trigger": "הצג פעולות"
+      }
+    },
+    "settings": {
+      "text": {
+        "advanced": {
+          "tooltip": "אפשרויות נוספות",
+          "trigger": "אפשרויות עיצוב נוספות"
+        }
+      },
+      "spacing": {
+        "advanced": {
+          "tooltip": "אפשרויות נוספות",
+          "trigger": "אפשרויות ריווח נוספות"
+        }
+      }
+    }
+  },
+  "audio": {
+    "player": {
+      "progress": "התקדמות ההשמעה",
+      "controls": "פקדי השמעה",
+      "mediaControls": "הגדרות שמע",
+      "coverAlt": "כריכת ספר שמע"
+    },
+    "remotePlayback": {
+      "trigger": "השמעה מרחוק",
+      "connected": "השמעה מרחוק מחוברת"
+    },
+    "settings": {
+      "sleepTimer": {
+        "hours": "ש'",
+        "minutes": "דק'",
+        "seconds": "שנ'",
+        "start": "התחל",
+        "instruction": "ההשמעה תושהה לאחר משך הזמן שהוגדר.",
+        "remaining": "מושהה בעוד {{ remaining }}"
+      }
+    }
+  }
+}

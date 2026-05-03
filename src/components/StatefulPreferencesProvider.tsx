@@ -4,7 +4,7 @@ import { ReactNode, useMemo } from "react";
 import { useStore } from "react-redux";
 
 import { DefaultKeys, ThPreferences } from "@/preferences/preferences";
-import { defaultPreferences } from "@/preferences/defaultPreferences";
+import { myPreferences } from "@/preferences/myPreferences";
 
 import { ThPreferencesProvider } from "@/preferences/ThPreferencesProvider";
 import { ThReduxPreferencesAdapter } from "@/lib/ThReduxPreferencesAdapter";
@@ -13,7 +13,7 @@ import { RootState } from "@/lib/store";
 
 export const StatefulPreferencesProvider = ({ 
   children,
-  initialPreferences = defaultPreferences as ThPreferences<DefaultKeys>
+  initialPreferences = myPreferences as ThPreferences<DefaultKeys>
 }: { 
   children: ReactNode;
   initialPreferences?: ThPreferences<DefaultKeys>;

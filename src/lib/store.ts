@@ -223,13 +223,8 @@ const saveState = (state: any, storageKey?: string, externalReducers: Record<str
     const stateToPersist: any = {};
     
     // Internal reducers to persist
-    if (state.actions) stateToPersist.actions = state.actions;
-    if (state.settings) stateToPersist.settings = state.settings;
     if (state.theming) stateToPersist.theming = state.theming;
-    if (state.preferences) stateToPersist.preferences = state.preferences;
     if (state.globalPreferences) stateToPersist.globalPreferences = state.globalPreferences;
-    if (state.webPubSettings) stateToPersist.webPubSettings = state.webPubSettings;
-    if (state.audioSettings) stateToPersist.audioSettings = state.audioSettings;
     
     // External reducers to persist
     Object.entries(externalReducers).forEach(([key, config]) => {
@@ -269,13 +264,17 @@ export const makeStore = (storageKey?: string, externalReducers: Record<string, 
   
   // Create preloaded state with persisted values
   const preloadedState: any = {
-    actions: persistedState.actions,
-    settings: persistedState.settings,
-    theming: persistedState.theming,
-    preferences: persistedState.preferences,
+    actions: undefined,
+    settings: undefined,
+    theming: undefined,
+    // Note: Do not load `preferences` from local storage.
+    // Thorium Web's architecture specifies that reader preferences should come
+    // from the initial configuration (e.g. `myPreferences.ts`) unless the user
+    // wants them to persist permanently. Omitting it forces initial setup to stick.
+    preferences: undefined,
     globalPreferences: persistedState.globalPreferences,
-    webPubSettings: persistedState.webPubSettings,
-    audioSettings: persistedState.audioSettings,
+    webPubSettings: undefined,
+    audioSettings: undefined,
     // Include persisted state for external reducers that have it
     ...Object.entries(externalReducers).reduce((acc, [key, config]) => {
       if (config.persist && persistedState[key] !== undefined) {

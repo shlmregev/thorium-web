@@ -31,6 +31,19 @@ To get started with Thorium Web, follow these steps:
 
 The development server will automatically reload the page when you make changes to the code.
 
+### Reading Local EPUB Files
+
+To read an EPUB file on your local disk in the Thorium Web application:
+
+1. In a terminal, use the provided script to start a local server for your EPUB file:
+   ```bash
+   pnpm run serve-local path/to/your/book.epub
+   ```
+2. The script will output a URL for Thorium Web (e.g., `http://localhost:3000/read/manifest/...`).
+3. Make sure the Next.js development server is running (`pnpm dev` in a separate terminal) and navigate to the printed URL in your browser.
+
+> Note: Make sure to start the Next.js development server with `MANIFEST_ROUTE_FORCE_ENABLE=true` if using the production build, or simply run `pnpm dev` which enables the manifest route by default.
+
 ### Using the Thorium Web package in your own project
 
 To use Thorium Web in your own project, install the package and its peer dependencies:

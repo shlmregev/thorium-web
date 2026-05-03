@@ -34,6 +34,7 @@ export class ThReduxPreferencesAdapter<T extends CustomizableKeys = Customizable
   public setPreferences(prefs: ThPreferences<T>): void {
     this.currentPreferences = prefs;
     this.store.dispatch(preferencesSlice.actions.updateFromPreferences(prefs as any));
+    this.store.dispatch({ type: 'settings/updateSettingsFromPreferences', payload: prefs });
     this.notifyListeners(prefs);
   }
 

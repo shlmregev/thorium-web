@@ -8,6 +8,7 @@ import { useAppSelector } from "@/lib/hooks";
 import { verifyManifestUrl } from "@/app/api/verify-manifest/verifyDomain";
 import { StatefulReaderWrapper } from "@/components/Reader/StatefulReaderWrapper";
 import { ErrorHandler, ProcessedError } from "@/helpers/errorHandler";
+import { StatefulPreferencesProvider } from "@/components/StatefulPreferencesProvider";
 
 type Params = { identifier: string };
 
@@ -66,12 +67,14 @@ export default function BookPage({ params }: Props) {
       { error ? (
         <ErrorDisplay error={ error } />
       ) : publication ? (
-        <StatefulReaderWrapper
-          profile={ profile }
-          publication={ publication }
-          localDataKey={ localDataKey }
-          isLoading={ isLoading || publicationLoading }
-        />
+        <StatefulPreferencesProvider>
+          <StatefulReaderWrapper
+            profile={ profile }
+            publication={ publication }
+            localDataKey={ localDataKey }
+            isLoading={ isLoading || publicationLoading }
+          />
+        </StatefulPreferencesProvider>
       ) : null }
     </>
   );

@@ -1,0 +1,341 @@
+{
+    "common": {
+        "actions": {
+            "apply": "החל",
+            "cancel": "ביטול",
+            "clear": "נקה",
+            "close": "סגור",
+            "decrease": "הקטן",
+            "done": "סיום",
+            "increase": "הגדל",
+            "reset": "איפוס",
+            "save": "שמור",
+            "search": "חיפוש"
+        }
+    },
+    "reader": {
+        "actions": {
+            "goBackward": "אחורה",
+            "goForward": "קדימה",
+            "goToNextChapter": {
+                "compact": "הפרק הבא",
+                "descriptive": "עבור לפרק הבא"
+            },
+            "goToNextPage": {
+                "compact": "העמוד הבא",
+                "descriptive": "עבור לעמוד הבא"
+            },
+            "goToNextResource": {
+                "compact": "המשאב הבא",
+                "descriptive": "עבור למשאב הבא"
+            },
+            "goToPosition": {
+                "compact": "עבור אל {{ position }}",
+                "descriptive": "עבור למיקום {{ position }}"
+            },
+            "goToPreviousChapter": {
+                "compact": "הפרק הקודם",
+                "descriptive": "עבור לפרק הקודם"
+            },
+            "goToPreviousPage": {
+                "compact": "העמוד הקודם",
+                "descriptive": "עבור לעמוד הקודם"
+            },
+            "goToPreviousResource": {
+                "compact": "המשאב הקודם",
+                "descriptive": "עבור למשאב הקודם"
+            }
+        },
+        "annotations": {
+            "actions": {
+                "addNote": {
+                    "compact": "הוסף הערה"
+                },
+                "delete": {
+                    "compact": "מחק הערה",
+                    "confirmation": "האם אתה בטוח שברצונך למחוק הערה זו?"
+                },
+                "editNote": {
+                    "compact": "ערוך הערה"
+                }
+            },
+            "bookmarks": {
+                "actions": {
+                    "add": {
+                        "compact": "הוסף סימניה"
+                    },
+                    "delete": {
+                        "compact": "מחק סימניה",
+                        "confirmation": "האם אתה בטוח שברצונך למחוק סימניה זו?"
+                    }
+                },
+                "emptyState": {
+                    "description": "סימניות חדשות שיתווספו במהלך הקריאה יופיעו ברשימה זו.",
+                    "title": "אין סימניות"
+                },
+                "title": "סימניות"
+            },
+            "note": {
+                "title": "הערה"
+            },
+            "sort": {
+                "lastAdded": {
+                    "compact": "נוסף לאחרונה"
+                },
+                "lastEdited": {
+                    "compact": "נערך לאחרונה"
+                },
+                "progression": {
+                    "compact": "התקדמות"
+                }
+            }
+        },
+        "playback": {
+            "actions": {
+                "pause": "השהה",
+                "play": "הפעל",
+                "skipBackward": {
+                    "compact": "אחורה",
+                    "descriptive": "דלג אחורה"
+                },
+                "skipForward": {
+                    "compact": "קדימה",
+                    "descriptive": "דלג קדימה"
+                }
+            },
+            "preferences": {
+                "audio": {
+                    "skipBackwardInterval": "מרווח דילוג אחורה",
+                    "skipForwardInterval": "מרווח דילוג קדימה",
+                    "skipInterval": "מרווח דילוג",
+                    "title": "הגדרות שמע",
+                    "volume": "עוצמת שמע"
+                },
+                "autoPlay": {
+                    "label": "הפעלה רציפה",
+                    "title": "הפעלה אוטומטית"
+                },
+                "playbackRate": {
+                    "compact": "מהירות",
+                    "descriptive": "מהירות השמעה"
+                },
+                "sleepTimer": {
+                    "compact": "טיימר",
+                    "descriptive": "טיימר שינה",
+                    "presets": {
+                        "endOfChapter": "סוף הפרק",
+                        "endOfResource": "סוף המשאב"
+                    }
+                }
+            }
+        },
+        "preferences": {
+            "brightness": "בהירות",
+            "columns": {
+                "auto": "אוטומטי",
+                "dual": {
+                    "compact": "2 עמודות",
+                    "descriptive": "שתי עמודות"
+                },
+                "single": {
+                    "compact": "1 עמודה",
+                    "descriptive": "עמודה אחת"
+                },
+                "title": "עמודות"
+            },
+            "fit": {
+                "auto": {
+                    "compact": "אוטומטי"
+                },
+                "page": {
+                    "compact": "עמוד"
+                },
+                "title": "התאמה",
+                "width": {
+                    "compact": "רוחב"
+                }
+            },
+            "fontFamily": {
+                "humanist": {
+                    "compact": "הומניסטי",
+                    "descriptive": "סנס-סריף הומניסטי"
+                },
+                "modern": {
+                    "compact": "מודרני",
+                    "descriptive": "סריף מודרני"
+                },
+                "monospace": "מונוספייס",
+                "oldStyle": {
+                    "compact": "סגנון ישן",
+                    "descriptive": "סריף בסגנון ישן"
+                },
+                "publisher": "גופן של המוציא לאור",
+                "sans": "סנס-סריף",
+                "title": "משפחת גופנים"
+            },
+            "fontSize": "גודל גופן",
+            "fontWeight": {
+                "bold": "מודגש יותר",
+                "normal": "רגיל",
+                "title": "משקל גופן"
+            },
+            "hyphens": {
+                "label": "אפשר מקפים",
+                "title": "מיקוף"
+            },
+            "layout": {
+                "paginated": "ממוספר (עמודים)",
+                "scrolled": "נגלל",
+                "title": "פריסה"
+            },
+            "letterSpacing": "ריווח אותיות",
+            "ligatures": {
+                "label": "אפשר ליגטורות",
+                "title": "ליגטורות"
+            },
+            "lineHeight": {
+                "default": "ברירת מחדל",
+                "large": "מרווח",
+                "medium": "מאוזן",
+                "small": "צפוף",
+                "title": "גובה שורה"
+            },
+            "noRuby": {
+                "label": "הסתר ביאורי רובי",
+                "title": "ביאורי רובי"
+            },
+            "offsetFirstPage": "הצג עמוד ראשון בנפרד",
+            "paragraphIndent": "הזחת פסקה",
+            "paragraphSpacing": "ריווח פסקאות",
+            "publisherStyles": {
+                "label": "השתמש בעיצוב מקורי",
+                "title": "סגנונות מוציא לאור"
+            },
+            "readingDirection": {
+                "default": {
+                    "compact": "ברירת מחדל",
+                    "descriptive": "השתמש בכיוון קריאה מקורי"
+                },
+                "ltr": {
+                    "compact": "ימין",
+                    "descriptive": "משמאל לימין"
+                },
+                "rtl": {
+                    "compact": "שמאל",
+                    "descriptive": "מימין לשמאל"
+                },
+                "title": "כיוון קריאה"
+            },
+            "spacing": {
+                "presets": {
+                    "accessible": "נגיש",
+                    "balanced": "מאוזן",
+                    "custom": "מותאם אישית",
+                    "default": "ברירת מחדל",
+                    "loose": "מרווח",
+                    "tight": "צפוף",
+                    "title": "קבוצות מוגדרות מראש"
+                },
+                "title": "ריווח"
+            },
+            "spread": {
+                "always": {
+                    "compact": "עמוד כפול"
+                },
+                "auto": {
+                    "compact": "אוטומטי"
+                },
+                "never": {
+                    "compact": "עמוד יחיד"
+                },
+                "title": "פרישת עמודים"
+            },
+            "text": "טקסט",
+            "textAlign": {
+                "default": "ברירת מחדל",
+                "justify": "יישור לשני צדדים",
+                "left": "שמאל",
+                "right": "ימין",
+                "title": "יישור טקסט"
+            },
+            "textNormalization": {
+                "label": "הסר את כל עיצובי הטקסט",
+                "title": "נרמול טקסט"
+            },
+            "themes": {
+                "auto": "אוטומטי",
+                "contrast1": "ניגודיות 1",
+                "contrast2": "ניגודיות 2",
+                "contrast3": "ניגודיות 3",
+                "dark": "כהה",
+                "gray": "אפור",
+                "light": "בהיר",
+                "paper": "נייר",
+                "sepia": "ספיה",
+                "title": "ערכות נושא"
+            },
+            "title": "הגדרות תצוגה",
+            "wordSpacing": "ריווח מילים",
+            "zoom": "תקריב"
+        },
+        "progression": {
+            "pagesLeft": {
+                "descriptive_one": "נותר עמוד {{ count }}",
+                "descriptive_other": "נותרו {{ count }} עמודים"
+            },
+            "pagesLeftInChapter": {
+                "descriptive_one": "נותר עמוד {{ count }} בפרק",
+                "descriptive_other": "נותרו {{ count }} עמודים בפרק"
+            },
+            "pagesLeftInPublication": {
+                "descriptive_one": "נותר עמוד {{ count }} בפרסום",
+                "descriptive_other": "נותרו {{ count }} עמודים בפרסום"
+            },
+            "percentage": "{{ percentage }}%",
+            "positionsLeft": {
+                "compact_one": "נותר {{ count }}",
+                "compact_other": "נותרו {{ count }}",
+                "descriptive_one": "נותר מיקום {{ count }}",
+                "descriptive_other": "נותרו {{ count }} מיקומים"
+            },
+            "positionsLeftInChapter": {
+                "compact_one": "נותר {{ count }} בפרק",
+                "compact_other": "נותרו {{ count }} בפרק",
+                "descriptive_one": "נותר מיקום {{ count }} בפרק",
+                "descriptive_other": "נותרו {{ count }} מיקומים בפרק"
+            },
+            "positionsLeftInPublication": {
+                "compact_one": "נותר {{ count }} בפרסום",
+                "compact_other": "נותרו {{ count }} בפרסום",
+                "descriptive_one": "נותר מיקום {{ count }} בפרסום",
+                "descriptive_other": "נותרו {{ count }} מיקומים בפרסום"
+            },
+            "range": "{{ start }}–{{ end }}",
+            "xOfY": {
+                "compact": "{{ x }} מתוך {{ y }}",
+                "descriptive": "{{ x }} מתוך {{ y }} ({{ z }})"
+            }
+        },
+        "search": {
+            "actions": {
+                "next": {
+                    "compact": "התוצאה הבאה"
+                },
+                "previous": {
+                    "compact": "התוצאה הקודמת"
+                }
+            },
+            "placeholder": "חפש מילות מפתח או ביטויים",
+            "result_one": "{{ current }} מתוך תוצאה {{ count }}",
+            "result_other": "{{ current }} מתוך {{ count }} תוצאות",
+            "title": "חיפוש"
+        },
+        "tableOfContents": {
+            "emptyState": {
+                "description": "המחבר לא סיפק תוכן עניינים.",
+                "title": "אין תוכן עניינים"
+            },
+            "title": "תוכן עניינים"
+        }
+    }
+}
