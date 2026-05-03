@@ -7,7 +7,7 @@ import { useAppSelector } from "@/lib/hooks";
 import { verifyManifestUrl } from "@/app/api/verify-manifest/verifyDomain";
 import { StatefulReaderWrapper } from "@/components/Reader/StatefulReaderWrapper";
 import { ErrorHandler, ProcessedError } from "@/helpers/errorHandler";
-import { myPreferences } from "@/preferences/myPreferences";
+import { StatefulPreferencesProvider } from "@/components/StatefulPreferencesProvider";
 
 type Params = { manifest: string };
 
@@ -60,13 +60,14 @@ export default function ManifestPage({ params }: Props) {
       { error ? (
         <ErrorDisplay error={ error } />
       ) : publication ? (
-        <StatefulReaderWrapper
-          profile={ profile }
-          publication={ publication }
-          localDataKey={ localDataKey }
-          isLoading={ isLoading || publicationLoading }
-          preferences={ { initialPreferences: myPreferences } }
-        />
+        <StatefulPreferencesProvider>
+          <StatefulReaderWrapper
+            profile={ profile }
+            publication={ publication }
+            localDataKey={ localDataKey }
+            isLoading={ isLoading || publicationLoading }
+          />
+        </StatefulPreferencesProvider>
       ) : null }
     </>
   );

@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { 
   ThLineHeightOptions, 
@@ -287,6 +287,17 @@ export const settingsSlice = createSlice({
     },
     setWordSpacing: (state, action) => {
       handleSpacingSetting(state, action, ThSpacingSettingsKeys.wordSpacing);
+    },
+    updateSettingsFromPreferences(state, action: PayloadAction<any>) {
+      const prefs = action.payload;
+
+      // Update basic settings that are configurable via preferences
+      if (prefs.settings?.keys?.columns?.default !== undefined) {
+        state.columnCount = prefs.settings.keys.columns.default;
+      }
+
+      // We can also extract default scroll state based on the layout if needed
+      // Currently leaving other settings as initial
     }
   }
 });
@@ -312,7 +323,8 @@ export const {
   setTextAlign,
   setTextNormalization,
   setNoRuby,
-  setWordSpacing
+  setWordSpacing,
+  updateSettingsFromPreferences
 } = settingsSlice.actions;
 
 export default settingsSlice.reducer;
