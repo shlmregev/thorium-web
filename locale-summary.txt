@@ -1,6 +1,6 @@
 Locale Completion Status
 Reference language: en
-Generated: 2026-04-27T11:38:36.830Z
+Generated: 2026-05-03T09:50:48.772Z
 
 
 Locale Completion Summary:
@@ -12,6 +12,7 @@ FR     [■■■■■■■■■■■■■■■■■■■■] 100%
 IT     [■■■■■■■■■■■■■■■■■■■□]  95%
 SV     [■■■■■■■■■■■■■■■■■■■□]  95%
 ET     [■■■■■■■■■■■■■■■■■■□□]  94%
+HE     [■■■■■■■■■■■■■■■■■■□□]  92%
 PT-PT  [■■■■■■■■■■■■■■■■■■□□]  90%
 LT     [■■■■■■■■■■■■■■■■□□□□]  82%
 AR     [■■■■■■■■■■■■■□□□□□□□]  68%
@@ -30,6 +31,7 @@ EN     [■■■■■■■■■■■■■■■■■■■■] 100%
 ES     [■■■■■■■■■■■■■■■■■■■■] 100%
 FI     [■■■■■■■■■■■■■■■■■■■■] 100%
 FR     [■■■■■■■■■■■■■■■■■■■■] 100%
+HE     [■■■■■■■■■■■■■■■■■■■■] 100%
 ET     [■■■■■■■■■■■■■■■■■■■□]  98%
 IT     [■■■■■■■■■■■■■■■■■■□□]  91%
 SV     [■■■■■■■■■■■■■■■■■■□□]  91%
@@ -131,6 +133,12 @@ ET (94% complete, 98% of inferred usage)
    • reader.progression.xOfY.compact
    • reader.progression.xOfY.descriptive
 
+
+HE (92% complete, 100% of inferred usage)
+   thorium-shared.json   ■■■■■■■■■□  90%  (169/188)
+   thorium-web.json      ■■■■■■■■■■ 100%  (62/62)
+   TOTAL                 ■■■■■■■■■□  92%  (231/250)
+   USED                  ■■■■■■■■■■ 100%  (126/126)
 
 PT-PT (90% complete, 84% of inferred usage)
    thorium-shared.json   ■■■■■■■■■□  94%  (176/188)
